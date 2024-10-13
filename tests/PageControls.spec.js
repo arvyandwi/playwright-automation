@@ -48,6 +48,6 @@ test('Child Window Handling Test', async ({browser}) =>
     await btnBurgerMenu.click();
     await lblLogout.click();
 
-    await txtUsername.fill(lblText);
+    await txtUsername.fill(lblText.replace("\n", ""));
     console.log(await txtUsername.textContent());
 });
